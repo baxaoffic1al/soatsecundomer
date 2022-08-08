@@ -1,0 +1,130 @@
+* {
+ margin:0;
+ padding:0; 
+}
+
+body {
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #10101E;
+}
+.ish {
+    gap: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.datetime {
+  color: #fff;
+  background-color: #10101E;
+  font-family: "Segoe Ui", sans-serif;
+  width: 460px;
+  padding: 15px 10px;
+  border: 3px solid #2e94e3;
+  border-radius: 5px;
+  -webkit-box-reflect :below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: .5s ;
+  transition-property: background, box-shadow;
+}
+
+.datetime:hover {
+  background: #2e94e3;
+  box-shadow: 0  0 30px #2e94e3;
+}
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#milisec {
+  display: none;
+}
+.time {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child) {
+  position: relative;
+  margin:0 6px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+
+.time span:last-child {
+  background-color:#2e94e3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+
+}
+
+
+/* Secundimer */
+
+.secundomer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 100px;
+}
+
+
+.secundomer__clock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secundomer__clock-description{
+    padding: 5px 5px 10px;
+    text-align: center;
+    color: #fff;
+    background: #191d22;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    border: 3px solid #2e94e3;
+    border-radius: 5px;
+  background-color: #10101E;
+  font-family: "Segoe Ui", sans-serif;
+}
+
+
+
+.secundomer__hours, .secundomer__minutes, .secundomer__seconds{
+  width: 62px;
+  text-align: center;
+  margin: 8px 0 16px;
+  background-color: #2e94e3;
+  padding: 10px 0;
+  font-size: 28px;
+}
+
+
+.secundomer__btn {
+  padding: 10px 15px;
+  background: #2e94e3;
+  border-radius: 30px;
+  border: 2px solid #2e94e3;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin-top: 50px;
+}
+

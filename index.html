@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Digital Clock</title>
+</head>
+<body onload="initClock()"> 
+
+
+  <div class="ish">
+
+  <div class="datetime">
+    <div class="date">
+      <span id="dayname">day</span>
+      <span id="month">month</span>
+      <span id="daynum">00</span>
+      <span id="year">year</span>
+    </div>
+    <div class="time">
+      <span id="hour">00</span>
+      <small class="nuqta">:</small>
+      <span id="minutes">00</span>
+      <small class="nuqta">:</small>
+      <span id="seconds">00</span>
+      <small class="nuqta">:</small>
+      <span id="milisec">00</span>
+      <span id="period">AM</span>
+    </div>
+  </div>
+
+
+  <div class="secundomer">
+    <div class="secundomer__clock">
+
+        <div class="secundomer__clock-description">
+            <!-- Hour -->
+            <div class="secundomer__hours">0</div>
+            Час.
+        </div>
+        <div class="secundomer__clock-description">
+            <!-- minut -->
+            <div class="secundomer__minutes">0</div>
+            Мин.
+        </div>
+        <div class="secundomer__clock-description">
+            <!-- secund -->
+            <div class="secundomer__seconds">0</div>
+            Сек.
+        </div>
+    </div>
+    <button class="secundomer__btn">start</button>
+</div>
+</div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
